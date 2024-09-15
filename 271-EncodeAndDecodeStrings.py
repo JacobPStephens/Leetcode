@@ -1,3 +1,7 @@
+# Jacob Stephens - September 15, 2024
+# https://leetcode.com/problems/encode-and-decode-strings/description/
+# on lintcode for free: https://www.lintcode.com/problem/659/
+
 class Solution:
 
     def encode(self, strs: List[str]) -> str:
