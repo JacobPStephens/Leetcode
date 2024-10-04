@@ -1,12 +1,11 @@
-# Jacob Stephens - September 23, 2024
-# https://leetcode.com/problems/palindrome-partitioning/
+from collections import deque
 
 class Solution:
     def partition(self, s: str) -> List[List[str]]:
         def main():
 
             # initiatlize variables
-            queue = [[s]]
+            queue = deque([[s]])
             level = 1 # index to split at - 1
             numPops = 0
 
@@ -19,10 +18,10 @@ class Solution:
                 numPops += 1
 
                 # one child does not split at level
-                queue.insert(0, parent)
+                queue.appendleft(parent)
 
                 # one child splits at level
-                queue.insert(0, splitAtI(parent, level-1))
+                queue.appendleft(splitAtI(parent, level-1))
                 
                 # increment splitting index if all children have been popped
                 if numPops == 2**(level-1):
