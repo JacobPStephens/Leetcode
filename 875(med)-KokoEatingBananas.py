@@ -1,3 +1,6 @@
+# Jacob Stephens - October 18, 2024
+# https://leetcode.com/problems/koko-eating-bananas/description/
+
 from math import ceil
 
 class Solution:
