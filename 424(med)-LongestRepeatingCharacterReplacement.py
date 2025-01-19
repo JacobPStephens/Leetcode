@@ -1,7 +1,7 @@
 # Jacob Stephens - January 19, 2025
+# https://leetcode.com/problems/longest-repeating-character-replacement/description/
 
 from collections import defaultdict
-
 class Solution:
     def characterReplacement(self, s: str, k: int) -> int:
         counts = defaultdict(int)
