@@ -17,7 +17,7 @@ class Solution:
                     
                     if not bounded(new_r, new_c):
                         continue
-                    adjHeight = heights[new_r][new_c]
+                    adjHeight = heights[new_r][new_c]   
                 
                     if (new_r, new_c, adjHeight) in visited:
                         continue
