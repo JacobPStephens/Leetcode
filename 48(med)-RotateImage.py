@@ -15,7 +15,7 @@ class Solution:
                 matrix[k+origin-1-i][0+origin] = matrix[k+origin-1][k+origin-1-i]
                 # bot-right with top-right
                 matrix[k+origin-1][k+origin-1-i] = matrix[0+origin+i][k+origin-1]
-                # top-right with top-left (correct)
+                # top-right with top-left
                 matrix[0+origin+i][k+origin-1] = tmp1
         
         n = len(matrix)
